@@ -1,0 +1,156 @@
+<section id="about-us">
+    <div class="container">
+      <h2>About Us</h2>
+      <style>
+        #about-us h2 {
+          position: relative;
+          display: inline-block;
+          animation: colorChange 5s infinite alternate;
+          transition: transform 0.3s ease;
+        }
+
+        #about-us h2::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: -5px;
+          left: 0;
+          background-color: #333;
+          transform: scaleX(0);
+          transform-origin: bottom right;
+          transition: transform 0.3s ease;
+        }
+
+        #about-us h2:hover {
+          transform: translateY(-5px);
+        }
+
+        #about-us h2:hover::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+
+        @keyframes colorChange {
+          0% { color: #3498db; }
+          25% { color: #e74c3c; }
+          50% { color: #2ecc71; }
+          75% { color: #f39c12; }
+          100% { color: #9b59b6; }
+        }
+      </style>
+      <p>
+        Meet the team behind ElegantRoom.AI, a group of innovators passionate about revolutionizing interior design. Our team consists of Om Takale, Falakara Mulla, Siddhik Shaikh, and Trupti Kambale, who have come together to create a platform that empowers users to transform their spaces into stunning, professional-looking rooms.
+      </p>
+      <div class="team-members">
+        <div class="member">
+          <img src="om-takale.jpg" alt="Om Takale">
+          <h3>Om Takale</h3>
+          <p>Co-Founder & AI Expert</p>
+        </div>
+        <div class="member">
+          <img src="falakara-mulla.jpg" alt="Falakara Mulla">
+          <h3>Falakara Mulla</h3>
+          <p>Co-Founder & Design Lead</p>
+        </div>
+        <div class="member">
+          <img src="siddhik-shaikh.jpg" alt="Siddhik Shaikh">
+          <h3>Siddhik Shaikh</h3>
+          <p>Co-Founder & Software Engineer</p>
+        </div>
+        <div class="member">
+          <img src="trupti-kambale.jpg" alt="Trupti Kambale">
+          <h3>Trupti Kambale</h3>
+          <style>
+            .member h3 {
+              position: relative;
+              display: inline-block;
+              animation: float 3s ease-in-out infinite;
+            }
+            
+            .member:nth-child(1) h3 { animation-delay: 0s; }
+            .member:nth-child(2) h3 { animation-delay: 0.5s; }
+            .member:nth-child(3) h3 { animation-delay: 1s; }
+            .member:nth-child(4) h3 { animation-delay: 1.5s; }
+
+            @keyframes float {
+              0%, 100% { transform: translateY(0); }
+              50% { transform: translateY(-10px); }
+            }
+
+            .member h3::after {
+              content: '';
+              position: absolute;
+              width: 100%;
+              height: 2px;
+              bottom: -5px;
+              left: 0;
+              background: linear-gradient(90deg, #3498db, #e74c3c, #2ecc71, #f39c12, #9b59b6);
+              background-size: 200% 100%;
+              animation: gradient 5s ease infinite;
+            }
+
+            @keyframes gradient {
+              0% { background-position: 0% 50%; }
+              50% { background-position: 100% 50%; }
+              100% { background-position: 0% 50%; }
+            }
+          </style>
+          <p>Co-Founder & UX Designer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <style>
+    #about-us {
+  background-color: #f7f7f7; /* light gray background */
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.member {
+  margin: 20px;
+  text-align: center;
+}
+
+.member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.member h3 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.member p {
+  font-size: 14px;
+  color: #666;
+}
+  </style>

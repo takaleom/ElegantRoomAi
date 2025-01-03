@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - ElegantRoom.Ai</title>
+<html>
+<head>
+<style>
+body {
+  background-color: #e0ffff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 300px;
+  margin: 100px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+            background-image: url('BGForAll.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forgot-password a {
+  color: #4CAF50;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* adjust the value to your liking */
+}
+    .social-links {
+        border: 2px solid #6a11cb;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+        background-color: #f0f0f0;
+    }
+    .social-button {
+        margin-bottom: 10px;
+    }
+    .social-button a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #fff;
+        transition: background-color 0.3s ease;
+    }
+    .social-button a:hover {
+        background-color: #e0e0e0;
+    }
+    .social-button img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Reduced gap between social buttons */
+        border: 2px solid #6a11cb;
+        border-radius: 10px;
+        padding: 15px;
+        margin-top: 20px;
+        background-color: #f0f0f0;
+    }
+    .social-button {
+        width: 100%;
+    }
+    .social-button a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #fff;
+        transition: background-color 0.3s ease;
+    }
+    .social-button a:hover {
+        background-color: #e0e0e0;
+    }
+    .social-button img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+    /* Updated styles to be compatible with the background image */
+body {
+    background-image: url('BGForAll.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    width: 300px;
+    margin: 100px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #2c3e50;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #3498db;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Register</h2>
+  <form>
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Enter your E-mail:</label>
+    <input type="email" id="email" name="email" required disabled>
+
+    <label for="mobile">Enter mobile number:</label>
+    <input type="text" id="mobile" name="mobile" required disabled>
+
+    <label for="country">Enter your country:</label>
+    <input type="text" id="country" name="country" required disabled>
+
+    <label for="userid">Create Username:</label>
+    <input type="text" id="userid" name="userid" required disabled>
+
+    <label for="password">Create Password:</label>
+    <input type="password" id="password" name="password" required disabled>
+
+    <input type="submit" value="Register" disabled>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            window.location.href = 'Login.html';
+        });
+    </script>
+    <div class="login-link">
+      <p>Already have an account? <a href="Login.html">Login here</a></p>
+    </div>
+
+  </form>
+
+  <div class="social-links">
+    <div class="social-button">
+      <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Fpli%3D1%26nlr%3D1&ec=GAlAwAE&hl=en_GB&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1423079454%3A1727197456320120&ddm=0">
+        <img src="GoogleLogo.jpg" alt="Google">
+        <span>Login with Google</span>
+      </a>
+    </div>
+    <div class="social-button">
+      <a href="https://www.facebook.com/login.php/">
+        <img src="FacebookLogo.png" alt="Facebook">
+        <span>Login with Facebook</span>
+      </a>
+
+    </div>
+  </div>
+  
+
+  
+</div>
+
+<script>
+  const nameInput = document.getElementById('name');
+  const emailInput = document.getElementById('email');
+  const mobileInput = document.getElementById('mobile');
+  const countryInput = document.getElementById('country');
+  const useridInput = document.getElementById('userid');
+  const passwordInput = document.getElementById('password');
+  const submitButton = document.querySelector('input[type="submit"]');
+
+  nameInput.addEventListener('input', () => {
+    if (nameInput.value.trim() !== '') {
+      emailInput.disabled = false;
+    } else {
+      emailInput.disabled = true;
+    }
+  });
+
+  emailInput.addEventListener('input', () => {
+    if (emailInput.value.trim() !== '') {
+      mobileInput.disabled = false;
+    } else {
+      mobileInput.disabled = true;
+    }
+  });
+
+  mobileInput.addEventListener('input', () => {
+    if (mobileInput.value.trim() !== '') {
+      countryInput.disabled = false;
+    } else {
+      countryInput.disabled = true;
+    }
+  });
+
+  countryInput.addEventListener('input', () => {
+    if (countryInput.value.trim() !== '') {
+      useridInput.disabled = false;
+    } else {
+      useridInput.disabled = true;
+    }
+  });
+
+  useridInput.addEventListener('input', () => {
+    if (useridInput.value.trim() !== '') {
+      passwordInput.disabled = false;
+    } else {
+      passwordInput.disabled = true;
+    }
+  });
+
+  passwordInput.addEventListener('input', () => {
+    if (passwordInput.value.trim() !== '') {
+      submitButton.disabled = false;
+    } else {
+      submitButton.disabled = true;
+    }
+  });
+</script>
+
+</body>
+</html>

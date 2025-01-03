@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="header">
+                <h1>ElegantRoom.Ai</h1> <!-- Website name at the top left -->
+            </div>
+            <h2>Sign In</h2>
+            <form>
+                <div class="input-group">
+                    <label for="Username">Username</label>
+                    <input type="text" id="Username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <a href="#" class="forgot-password">Forgot Password?</a> <!-- Forgot password link -->
+                <button type="submit">Log In</button><br><br>
+                <script>
+                    document.querySelector('form').addEventListener('submit', function(e) {
+                        e.preventDefault();
+                        window.location.href = 'Mainpage.html';
+                    });
+                </script>
+                <p class="signup-prompt">New to ElegantRoom? <a href="Register.html">Sign up</a></p>
+                <div class="social-login">
+                        <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Fpli%3D1%26nlr%3D1&ec=GAlAwAE&hl=en_GB&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1423079454%3A1727197456320120&ddm=0"><img src="GoogleLogo.jpg" alt="Google"></a>
+                        <a href="https://www.facebook.com/login.php/"><img src="FacebookLogo.png" alt="Facebook"></a>
+                </div>
+                </div>        
+            </form>
+        </div>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('BGForAll.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            animation: fadeIn 1s ease;
+            width: 300px; /* Fixed width for better alignment */
+        }
+
+        .header {
+            text-align: left; /* Align website name to the left */
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+            color: #6a11cb; /* Match color to the theme */
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            text-align: center;
+            color: #333;
+        }
+
+        .input-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #666;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: border 0.3s;
+        }
+
+        input:focus {
+            border-color: #6a11cb;
+        }
+
+        .forgot-password {
+            display: block;
+            text-align: right;
+            margin: 0.5rem 0 1rem;
+            color: #6a11cb;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            width: 100%;
+            padding: 0.7rem;
+            background: #6a11cb;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #2575fc;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+            .social-login {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                margin-top: 20px;
+            }
+            .social-login a {
+                display: inline-block;
+            }
+            .social-login img {
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+
+                @keyframes labelFloat {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(-20px);
+                opacity: 1;
+            }
+        }
+
+        .input-group label {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .input-group input:focus + label,
+        .input-group input:not(:placeholder-shown) + label {
+            animation: labelFloat 0.3s forwards;
+            color: #6a11cb;
+            font-size: 0.8em;
+        }
+
+    </style>
+</body>
+</html>

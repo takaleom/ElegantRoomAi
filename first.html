@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElegantRoom.ai</title>
+</head>
+<body>
+    <header>
+        <div class="logo">ElegantRoom.Ai</div>
+        <div class="auth-buttons">
+            <a href="Register.html">
+                <button class="signup" href="Register.html">Sign Up</button></a>
+
+            <a href="Login.html">
+                <button class="login">Login</button></a>
+        </div>
+    </header>
+    <main>
+        <h1>Generating dream homes and rooms using <br>ElegantRoom.Ai</h1>
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img src="OriginalRoom2.jpeg" alt="Dream Home 1" class="image">
+                <p>Before</p>
+            </div>
+            
+            <div class="image-wrapper">
+                <img src="GeneratedRoom2.jpeg" alt="Dream Home 2" class="image">
+                
+                <p>After</p>
+            </div>
+        </div>
+    </main>
+    <style>
+        .image-wrapper p {
+
+            font-weight: bold;
+            color: #FF5733;
+            font-size: 1.2em;
+            text-align: center;
+            margin-top: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        body {
+        background-image: url('BGForAll.png');  
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+}
+.image-wrapper {
+                        transition: transform 0.3s ease-in-out;
+                    }
+                    .image-wrapper:hover {
+                        transform: scale(1.05);
+                    }
+                    .image {
+                        transition: filter 0.3s ease-in-out;
+                    }
+                    .image-wrapper:hover .image {
+                        filter: brightness(1.1);
+                    }
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.login {
+    background-color: #007BFF;
+    color: white;
+}
+
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+h1 {
+    margin: 20px 0;
+    animation: fadeIn 1s ease-in-out, pulse 2s infinite;
+    font-size: 50px; /* Reduced font size */
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows images to wrap to the next line if needed */
+}
+
+.image-wrapper {
+    text-align: center; /* Center the text under each image */
+}
+
+.image {
+    width: 100%; /* Make images responsive */
+    max-width: 800px; /* Increase the maximum width */
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the aspect ratio is maintained */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.image-wrapper p {
+    margin-top: 10px; /* Space between the image and the text */
+    font-size: 18px; /* Font size for the caption */
+    color: #333; /* Text color */
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows images to wrap to the next line if needed */
+}
+
+.image {
+    width: 800px; /* Make images responsive */
+    max-width: 500px; /* Set a maximum width */
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+    </style>
+</body>
+</html>

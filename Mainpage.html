@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElegantRoom.Ai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="website-name">ElegantRoom.Ai</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="first.html">Home</a></li>
+                <li><a href="HowItWorks.html">How it works</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="ContactUs.html">Contact us</a></li>
+                <li class="account"><a href="#">Account</a>
+                    <ul>
+                        <li><a href="Login.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="animated-title">Design Your Dream</h1>
+        
+        <form>
+            <label for="room-type">Select Room Type:</label>
+            <select id="room-type" name="room-type">
+                <option value="">Select Room Type</option>
+                <option value="Bedroom">Bedroom</option>
+                <option value="Living Hall">Living Hall</option>
+                <option value="Kitchen">Kitchen</option>
+                <option value="DiningRoom">Dining Room</option>
+                <option value="LivingRoom">Living Room</option>
+                <option value="MasterBedroom">Master Bedroom</option>
+                <option value="LoundryRoom">Loundry Room</option>
+                <option value="GuestRoom">Guest Room</option>
+                <option value="Office">Office</option>
+                <option value="Library">Library</option>
+                <option value="KidsBedroom">Kids Bedroom</option>
+                <option value="Basement">Basement</option>
+                <option value="StorageRoom">Storage Room</option>
+                <option value="FamilyRoom">Family Room</option>
+                <option value="Balconie">Balconie</option>
+                <option value="GameRoom">Game Room</option>
+                <option value="EmptyLand">Empty Land</option>
+                
+            </select>
+            <br><br>
+            <label for="upload-image">Upload your image:</label>
+            <input type="file" id="upload-image" name="upload-image">
+            <br><br>
+            <button type="submit" class="animated-button">Generate</button>
+        </form>
+
+    </main>
+    <style>
+        
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.website-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar {
+    margin-left: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #ccc;
+}
+
+.account {
+    position: relative;
+}
+
+.account ul {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    padding: 10px;
+    display: none;
+}
+
+.account:hover ul {
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.animated-title {
+    animation: title-animation 2s ease-in-out;
+}
+
+@keyframes title-animation {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animated-button {
+    animation: button-animation 2s ease-in-out;
+}
+
+@keyframes button-animation {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #444;
+}
+    form {
+        /* Form container styles */
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border-radius: 8px;
+    }
+
+    form h2 {
+        /* Form title styles */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    form .form-group {
+        /* Form group styles */
+        margin-bottom: 15px;
+    }
+
+    form label {
+        /* Label styles */
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"],
+    form select {
+        /* Input and select styles */
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    form button[type="submit"] {
+        /* Submit button styles */
+        width: 100%;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    form button[type="submit"]:hover {
+        /* Submit button hover styles */
+        background-color: #444;
+    }
+    body {
+            background-image: url('BGForAll.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Ensure text is readable on the background image */
+        main {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        /* Adjust header for better visibility */
+        header {
+            background-color: rgba(51, 51, 51, 0.9);
+        }
+    
+
+
+
+
+    </style>
+</body>
+</html>
